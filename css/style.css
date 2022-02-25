@@ -2,13 +2,13 @@
   margin: 0;
 }
 .hero {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   /* align-items: center; */
   align-content: center;
-  background-color: antiquewhite;
+  /*  */
 }
 
 .leftHero {
@@ -67,27 +67,44 @@
   color: blue;
 }
 
-#video {
-  width: 800px;
-  height: 350px;
-}
-
 .video-sec {
-  margin-top: 100px;
+  position: relative;
+  padding: 15rem;
+  background-color: #f7f7f7;
+  margin-top: 2rem;
 }
 
 .video-sec-div {
-  width: 100%;
+  /* width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
-  justify-content: center;
+  justify-content: center; */
+  position: absolute;
+  background-color: #f7f7f7;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* z-index: -1;
+  opacity: 0.15; */
+  overflow: hidden;
 }
 
-.video-sec h2 {
-  margin-bottom: 10px;
+#video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
 }
+
+
+.video-sec-div__header  {
+
+}
+
+
 
 .form-sec {
   margin-top: 60px;
@@ -122,4 +139,27 @@
 .submitInput input {
   font-size: medium;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* .hero {
+    display:block;
+    max-width: 600px;
+    margin: 0 auto;
+  } */
+
+  .hero {
+    display: block !important;
+
+  }
+
+
+  .rightHero {
+    margin-right: 0;
+  }
+
+  .leftHero {
+    margin: 0 auto;
+  }
+
 }
